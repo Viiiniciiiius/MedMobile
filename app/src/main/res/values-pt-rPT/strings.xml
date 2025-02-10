@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">medmobile</string>
+    <string name="title_activity_login">Ecram de login</string>
+    <string name="prompt_password">Senha</string>
+    <string name="action_sign_in">Entrar ou cadastrar-se</string>
+    <string name="action_sign_in_short">Entar</string>
+    <string name="welcome">Bem vindo !</string>
+    <string name="invalid_username">Não é um nome váido</string>
+    <string name="invalid_password">Senha deve ter mais que 7 caracteres</string>
+    <string name="login_failed">Login falhou</string>
+</resources>

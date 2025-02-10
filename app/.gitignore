@@ -1,0 +1,10 @@
+/src/test
+/src/androidTest
+/build
+/.gradle
+/test
+/libs
+/sampledata
+google-services.json
+build.gradle.kts
+proguard-rules.pro

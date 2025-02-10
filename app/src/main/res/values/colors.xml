@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="spirit">#00000000</color>
+    <color name="spirit_black">#0F000000</color>
+    <color name="spirit_white">#0FFFFFFF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#FFFFD554</color>
+    <color name="orange">#F1833B</color>
+    <color name="blue">#FF008A92</color>
+    <color name="ocean_blue">#FF00597F</color>
+    <color name="dark_blue">#FF03305A</color>
+    <color name="beg">#ECEAE5</color>
+    <color name="dark_beg">#1E1E1D</color>
+
+
+
+    <color name="cor1">#01C30B</color>
+    <color name="cor2">#91DD04</color>
+    <color name="cor3">#DDC319</color>
+    <color name="cor4">#EA8B17</color>
+    <color name="cor5">#E85116</color>
+    <color name="cor6">#CF1A15</color>
+</resources>

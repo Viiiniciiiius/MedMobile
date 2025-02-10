@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.medmobile" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/blue</item>
+        <item name="android:colorBackground">@color/dark_beg</item>
+        <item name="android:fontFamily">@font/calistoga</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="colorError">@color/yellow</item>
+        <item name="colorOnError">@color/yellow</item>
+    </style>
+</resources>

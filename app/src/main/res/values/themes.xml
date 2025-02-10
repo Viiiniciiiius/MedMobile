@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.medmobile" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor"> @color/dark_blue</item>
+        <item name="android:colorBackground">@color/beg</item>
+        <item name="android:fontFamily">@font/abeezee</item>
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="colorError">@color/orange</item>
+        <item name="colorOnError">@color/orange</item>
+    </style>
+
+    <style name="Theme.medmobile" parent="Base.Theme.medmobile" />
+
+
+
+    <style name="radio_button_nivel1" parent="Theme.Material3.DayNight">
+        <item name="colorPrimary"> @color/cor1</item>
+    </style>
+    <style name="radio_button_nivel2" parent="Theme.Material3.DayNight">
+        <item name="colorPrimary"> @color/cor2</item>
+    </style>
+    <style name="radio_button_nivel3" parent="Theme.Material3.DayNight">
+        <item name="colorPrimary"> @color/cor3</item>
+    </style>
+    <style name="radio_button_nivel4" parent="Theme.Material3.DayNight">
+        <item name="colorPrimary"> @color/cor4</item>
+    </style>
+    <style name="radio_button_nivel5" parent="Theme.Material3.DayNight">
+        <item name="colorPrimary"> @color/cor5</item>
+    </style>
+    <style name="radio_button_nivel6" parent="Theme.Material3.DayNight">
+        <item name="colorPrimary"> @color/cor6</item>
+    </style>
+</resources>

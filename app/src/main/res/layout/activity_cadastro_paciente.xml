@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.CadastroPaciente">
+
+    <TextView
+        android:id="@+id/textView29Paciente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/calistoga"
+        android:text="Registro"
+        android:textSize="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutNomeCompletoPaciente"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:boxStrokeColor="@color/ocean_blue"
+        app:boxStrokeErrorColor="@color/orange"
+        app:cursorErrorColor="@color/orange"
+        app:errorEnabled="true"
+        app:errorIconDrawable="@drawable/error_24"
+        app:errorIconTint="@color/orange"
+        app:errorTextColor="@color/orange"
+        app:hintAnimationEnabled="true"
+        app:hintTextColor="@color/dark_blue"
+        app:layout_constraintBottom_toTopOf="@+id/layoutDataNacimentoPaciente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView29Paciente"
+        app:layout_constraintVertical_bias="0.5">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextNomeCompletoPaciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome Completo*"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:padding="8dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutDataNacimentoPaciente"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        app:boxStrokeColor="@color/ocean_blue"
+        app:boxStrokeErrorColor="@color/orange"
+        app:errorTextColor="@color/orange"
+        app:errorEnabled="true"
+        app:hintAnimationEnabled="true"
+        app:hintTextColor="@color/dark_blue"
+        app:layout_constraintBottom_toTopOf="@+id/layoutEnderecoPaciente"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutNomeCompletoPaciente"
+        app:layout_constraintVertical_bias="0.5">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextDataNascimentoPaciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="1234567890"
+            android:hint="Data Nascimento*"
+            android:inputType="date"
+            android:maxLines="1"
+            android:maxLength="10"
+            android:padding="8dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutFotoPaciente"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        app:boxStrokeColor="@color/ocean_blue"
+        app:boxStrokeErrorColor="@color/orange"
+        app:errorTextColor="@color/orange"
+        app:errorEnabled="true"
+        app:hintAnimationEnabled="true"
+        app:hintTextColor="@color/dark_blue"
+        app:layout_constraintBottom_toBottomOf="@+id/layoutDataNacimentoPaciente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/layoutDataNacimentoPaciente">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextFotoPaciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Carregar Foto*"
+            android:inputType="date"
+            android:maxLines="1"
+            android:padding="8dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutEnderecoPaciente"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:boxStrokeColor="@color/ocean_blue"
+        app:boxStrokeErrorColor="@color/orange"
+        app:errorTextColor="@color/orange"
+        app:errorEnabled="true"
+        app:hintAnimationEnabled="true"
+        app:hintTextColor="@color/dark_blue"
+        app:layout_constraintBottom_toTopOf="@+id/layoutCodigoPostalPaciente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutDataNacimentoPaciente"
+        app:layout_constraintVertical_bias="0.5">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextEnderecoPaciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Endereço - Rua, Nº, Ap/Esq*"
+            android:inputType="textPostalAddress"
+            android:maxLines="1"
+            android:padding="8dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutCodigoPostalPaciente"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        app:boxStrokeColor="@color/ocean_blue"
+        app:boxStrokeErrorColor="@color/orange"
+        app:errorTextColor="@color/orange"
+        app:errorEnabled="true"
+        app:hintAnimationEnabled="true"
+        app:hintTextColor="@color/dark_blue"
+        app:layout_constraintBottom_toTopOf="@+id/layoutTelemovel1Paciente"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutEnderecoPaciente"
+        app:layout_constraintVertical_bias="0.5">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextCodigoPostalPaciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Código Postal*"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="8dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutCidadePaciente"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        app:boxStrokeColor="@color/ocean_blue"
+        app:boxStrokeErrorColor="@color/orange"
+        app:errorTextColor="@color/orange"
+        app:errorEnabled="true"
+        app:hintAnimationEnabled="true"
+        app:hintTextColor="@color/dark_blue"
+        app:layout_constraintBottom_toBottomOf="@+id/layoutCodigoPostalPaciente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/layoutCodigoPostalPaciente"
+        app:layout_constraintVertical_bias="0.5">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextCidadePaciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cidade*"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="8dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutTelemovel1Paciente"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        app:boxStrokeColor="@color/ocean_blue"
+        app:boxStrokeErrorColor="@color/orange"
+        app:errorTextColor="@color/orange"
+        app:errorEnabled="true"
+        app:hintAnimationEnabled="true"
+        app:hintTextColor="@color/dark_blue"
+        app:layout_constraintBottom_toTopOf="@+id/layoutEmailPaciente"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutCodigoPostalPaciente"
+        app:layout_constraintVertical_bias="0.5">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextTelemovel1Paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telemóvel 1*"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:padding="8dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutTelemovel2Paciente"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        app:boxStrokeColor="@color/ocean_blue"
+        app:boxStrokeErrorColor="@color/orange"
+        app:errorTextColor="@color/orange"
+        app:errorEnabled="true"
+        app:hintAnimationEnabled="true"
+        app:hintTextColor="@color/dark_blue"
+        app:layout_constraintBottom_toBottomOf="@+id/layoutTelemovel1Paciente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/layoutTelemovel1Paciente">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextTelemovel2Paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telemóvel 2"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:padding="8dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutEmailPaciente"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:boxStrokeColor="@color/ocean_blue"
+        app:boxStrokeErrorColor="@color/orange"
+        app:errorTextColor="@color/orange"
+        app:errorEnabled="true"
+        app:hintAnimationEnabled="true"
+        app:hintTextColor="@color/dark_blue"
+        app:layout_constraintBottom_toTopOf="@+id/layoutSenha1Paciente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutTelemovel1Paciente"
+        app:layout_constraintVertical_bias="0.5">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextEmailPaciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:padding="8dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutSenha1Paciente"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:boxStrokeColor="@color/ocean_blue"
+        app:boxStrokeErrorColor="@color/orange"
+        app:errorTextColor="@color/orange"
+        app:errorEnabled="true"
+        app:hintAnimationEnabled="true"
+        app:hintTextColor="@color/dark_blue"
+        app:layout_constraintBottom_toTopOf="@+id/layoutSenha2Paciente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutEmailPaciente"
+        app:layout_constraintVertical_bias="0.5">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextSenha1Paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Crie sua Senha*"
+            android:inputType="textVisiblePassword"
+            android:maxLines="1"
+            android:padding="8dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutSenha2Paciente"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:boxStrokeColor="@color/ocean_blue"
+        app:boxStrokeErrorColor="@color/orange"
+        app:errorTextColor="@color/orange"
+        app:errorEnabled="true"
+        app:hintAnimationEnabled="true"
+        app:hintTextColor="@color/dark_blue"
+        app:layout_constraintBottom_toTopOf="@+id/bttCancelarCadastroPaciente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutSenha1Paciente"
+        app:layout_constraintVertical_bias="0.5">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextSenha2Paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirme sua Senha*"
+            android:inputType="textVisiblePassword"
+            android:maxLines="1"
+            android:padding="8dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bttCancelarCadastroPaciente"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btt_dark_blue"
+        android:text="Cancelar"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bttContinuarCadastroPaciente"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutSenha2Paciente" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bttContinuarCadastroPaciente"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:background="@drawable/btt_dark_blue"
+        android:text="Continuar"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/bttCancelarCadastroPaciente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bttCancelarCadastroPaciente"
+        app:layout_constraintTop_toTopOf="@+id/bttCancelarCadastroPaciente" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50121653" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

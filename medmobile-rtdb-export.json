@@ -1,0 +1,103 @@
+{
+  "Pacientes": {
+    "pJp7tRZ9n9XMuZX9QV8J4D8xgLA3": {
+      "cidade": "lisboa",
+      "codigoPostal": "8888-355",
+      "dataNascimento": "06/09/2003",
+      "email": "ave@gmail.com",
+      "endereco": "Av. Aldemar 234",
+      "nome": "Ana",
+      "nomeCompleto": "Ana Carla",
+      "telemovel1": "88994948888",
+      "telemovel2": "",
+      "uidProfissionais": "dFhJg0oWYWTzIC9gPgvgS3hCFrr2 @$ 743bl8uXdJPU8o3YBV46KvC4Wa83"
+    }
+  },
+  "Profissionais": {
+    "743bl8uXdJPU8o3YBV46KvC4Wa83": {
+      "cidade": "Arabuiba",
+      "codigoPostal": "1313-121",
+      "dataNascimento": "12/12/2001",
+      "email": "sombra@gmail.com",
+      "endereco": "Sobrau 1870",
+      "nome": "João",
+      "nomeCompleto": "João Sombra",
+      "telemovel1": "1234567888",
+      "telemovel2": ""
+    },
+    "dFhJg0oWYWTzIC9gPgvgS3hCFrr2": {
+      "cidade": "porto alegre",
+      "codigoPostal": "1111-111",
+      "dataNascimento": "20/01/2002",
+      "email": "george@gmail.com",
+      "endereco": "Ademar 23",
+      "nome": "Carlos",
+      "nomeCompleto": "Carlos George",
+      "telemovel1": "22222222222",
+      "telemovel2": "2222222222",
+      "uidPacientes": "pJp7tRZ9n9XMuZX9QV8J4D8xgLA3"
+    }
+  },
+  "Solicitacoes": {
+    "-O9VQiLXpymvrer-lu1p": {
+      "data": "18/10/2024",
+      "gravidade": "",
+      "nomePaciente": "Ana",
+      "nomeProfissional": "Carlos",
+      "situacao": "Respondido",
+      "textoPac": "conversar @$# para saber oque devo tomar? @$# obrigado",
+      "textoPro": "para que queres conversar? @$# todos os remedios da receita @$# disponha",
+      "tipo": "Telefonema",
+      "uidPaciente": "pJp7tRZ9n9XMuZX9QV8J4D8xgLA3",
+      "uidProfissional": "dFhJg0oWYWTzIC9gPgvgS3hCFrr2"
+    },
+    "-O9VrU4rPlFS98gkHtJ1": {
+      "data": "18/10/2024",
+      "gravidade": "",
+      "nomePaciente": "Ana",
+      "nomeProfissional": "Carlos",
+      "situacao": "Pendente",
+      "textoPac": "Dores de cabeça",
+      "textoPro": "",
+      "tipo": "Urgência",
+      "uidPaciente": "pJp7tRZ9n9XMuZX9QV8J4D8xgLA3",
+      "uidProfissional": "dFhJg0oWYWTzIC9gPgvgS3hCFrr2"
+    },
+    "-OAsRGkT_hLUHZ62rewT": {
+      "data": "04/11/2024",
+      "gravidade": "",
+      "nomePaciente": "Ana",
+      "nomeProfissional": "Carlos",
+      "situacao": "Pendente",
+      "textoPac": "Estou com dor de cabeça forte",
+      "textoPro": "",
+      "tipo": "Telefonema",
+      "uidPaciente": "pJp7tRZ9n9XMuZX9QV8J4D8xgLA3",
+      "uidProfissional": "dFhJg0oWYWTzIC9gPgvgS3hCFrr2"
+    },
+    "-OAsS-8oHFZ0D3HHIFnB": {
+      "data": "04/11/2024",
+      "gravidade": "",
+      "nomePaciente": "Ana",
+      "nomeProfissional": "João",
+      "situacao": "Pendente",
+      "textoPac": "Acho que vou morrer",
+      "textoPro": "",
+      "tipo": "Urgência",
+      "uidPaciente": "pJp7tRZ9n9XMuZX9QV8J4D8xgLA3",
+      "uidProfissional": "743bl8uXdJPU8o3YBV46KvC4Wa83"
+    },
+    "-OAsSPl78toV0TOhEZ_k": {
+      "data": "04/11/2024",
+      "gravidade": "",
+      "nomePaciente": "Ana",
+      "nomeProfissional": "Carlos",
+      "situacao": "Pendente",
+      "textoPac": "atestado, quebrei o tornozelo",
+      "textoPro": "",
+      "tipo": "Documento",
+      "uidPaciente": "pJp7tRZ9n9XMuZX9QV8J4D8xgLA3",
+      "uidProfissional": "dFhJg0oWYWTzIC9gPgvgS3hCFrr2"
+    }
+  }
+}

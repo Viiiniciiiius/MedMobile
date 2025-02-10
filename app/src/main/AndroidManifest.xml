@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo_medmobile"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_medmobile"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.medmobile"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activity.MensagemPaciente"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.CadastroProfissional"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.LoginProfissional"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.LoginPaciente"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.HistoricoEspecifico"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".Activity.ConfiguracoesProfissional"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".Activity.FalaDoutorPaciente"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".Activity.ResportaSolicitacao"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".Activity.ListaTarefasProfissional"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".Activity.DocumentosPaciente"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".Activity.InformacoesUteis"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".Activity.CadastroPaciente"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".Activity.ListaSolicitacoes"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".Activity.ConsultaPaciente"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".Activity.DuvidasPaciente"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".Activity.UrgenciaPaciente"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".Activity.TelaProfissional"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".Activity.TelaPaciente"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".Activity.MainActivity"
+            android:exported="true"
+            android:screenOrientation="behind">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

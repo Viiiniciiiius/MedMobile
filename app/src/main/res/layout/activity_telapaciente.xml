@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.TelaPaciente"
+    tools:layout_editor_absoluteY="25dp">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bttAdicionarProfissional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btt_dark_blue"
+        android:text="Novo Profissional"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3234" />
+
+    <TextView
+        android:id="@+id/textView3234"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Adicionar um novo Profissional á sua lista:"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view332" />
+
+    <View
+        android:id="@+id/view332"
+        android:layout_width="360dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/dark_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bttHistoricoSolicitacoesPac" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bttHistoricoSolicitacoesPac"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btt_dark_blue"
+        android:text="Solicitações"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView332" />
+
+    <TextView
+        android:id="@+id/textView332"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ver seu histórico de solicitções:"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Itens clicáveis"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fala Doutor"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/imgBttFalaDr"
+        app:layout_constraintStart_toStartOf="@+id/imgBttFalaDr"
+        app:layout_constraintTop_toBottomOf="@+id/imgBttFalaDr" />
+
+    <ImageButton
+        android:id="@+id/imgBttFalaDr"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/spirit"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter"
+        android:src="@drawable/img_telefonia"
+        app:layout_constraintEnd_toStartOf="@+id/imgBttUrgencia"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+
+    <ImageButton
+        android:id="@+id/imgBttInformacoesUteis"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@color/spirit"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter"
+        android:src="@drawable/img_emergencia"
+        app:layout_constraintBottom_toBottomOf="@+id/imgBttDocumentos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgBttDocumentos"
+        app:layout_constraintTop_toTopOf="@+id/imgBttDocumentos" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informações Úteis"
+        app:layout_constraintEnd_toEndOf="@+id/imgBttInformacoesUteis"
+        app:layout_constraintStart_toStartOf="@+id/imgBttInformacoesUteis"
+        app:layout_constraintTop_toBottomOf="@+id/imgBttInformacoesUteis" />
+
+    <ImageButton
+        android:id="@+id/imgBttUrgencia"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@color/spirit"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter"
+        android:src="@drawable/img_urgencia"
+        app:layout_constraintBottom_toTopOf="@+id/textViewT"
+        app:layout_constraintEnd_toStartOf="@+id/imgBttDuvidas"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgBttFalaDr"
+        app:layout_constraintTop_toTopOf="@+id/imgBttFalaDr" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Urgência"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/imgBttUrgencia"
+        app:layout_constraintStart_toStartOf="@+id/imgBttUrgencia"
+        app:layout_constraintTop_toBottomOf="@+id/imgBttUrgencia" />
+
+    <ImageButton
+        android:id="@+id/imgBttDuvidas"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@color/spirit"
+        android:scaleType="fitCenter"
+        android:src="@drawable/img_duvidas"
+        app:layout_constraintBottom_toBottomOf="@+id/imgBttUrgencia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgBttUrgencia"
+        app:layout_constraintTop_toTopOf="@+id/imgBttUrgencia" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dúvidas"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/imgBttDuvidas"
+        app:layout_constraintStart_toStartOf="@+id/imgBttDuvidas"
+        app:layout_constraintTop_toBottomOf="@+id/imgBttDuvidas" />
+
+    <ImageButton
+        android:id="@+id/imgBttConsulta"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/spirit"
+        android:scaleType="fitCenter"
+        android:src="@drawable/img_consulta"
+        app:layout_constraintEnd_toStartOf="@+id/imgBttDocumentos"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewT" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marcar Consulta"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/imgBttConsulta"
+        app:layout_constraintStart_toStartOf="@+id/imgBttConsulta"
+        app:layout_constraintTop_toBottomOf="@+id/imgBttConsulta" />
+
+    <ImageButton
+        android:id="@+id/imgBttDocumentos"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@color/spirit"
+        android:scaleType="fitCenter"
+        android:src="@drawable/img_atestado"
+        app:layout_constraintBottom_toTopOf="@+id/textView21"
+        app:layout_constraintEnd_toStartOf="@+id/imgBttInformacoesUteis"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgBttConsulta"
+        app:layout_constraintTop_toTopOf="@+id/imgBttConsulta" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Documentos"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/imgBttDocumentos"
+        app:layout_constraintStart_toStartOf="@+id/imgBttDocumentos"
+        app:layout_constraintTop_toBottomOf="@+id/imgBttDocumentos" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="360dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/dark_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <ImageButton
+        android:id="@+id/bttLogOutPac"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginBottom="16dp"
+        android:background="@color/spirit"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/arrow_left" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

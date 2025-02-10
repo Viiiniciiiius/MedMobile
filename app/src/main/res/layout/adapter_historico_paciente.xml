@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <ImageView
+            android:id="@+id/iconeHPImageView"
+            android:layout_width="20dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:padding="6dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/img_telefonia" />
+
+        <TextView
+            android:id="@+id/nomeHPTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Nome Pro" />
+
+        <TextView
+            android:id="@+id/tipoHPTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Tipo" />
+
+        <TextView
+            android:id="@+id/solicitacaoHPTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Situacao" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/gravidadeHPTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Gravidade" />
+
+            <TextView
+                android:id="@+id/dataHPTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:gravity="center|top"
+                android:text="data/hora" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

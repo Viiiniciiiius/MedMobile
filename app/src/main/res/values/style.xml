@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="EditTextCustomStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/edittext_texto_comentario</item>
+        <item name="android:textColor">@color/dark_blue</item>
+    </style>
+
+</resources>
