@@ -59,7 +59,7 @@ This project is licensed under the **MIT License**.
 
 ## 📬 Contact
 For any inquiries or collaboration:
-- **Email:** your-email@example.com
+- **Email:** viniciusjaguaruana.com
 - **GitHub:** [Viiniciiiius](https://github.com/Viiiniciiiius)
 
 ---
